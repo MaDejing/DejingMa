@@ -165,7 +165,7 @@ footer {
 
   a {
     display: inline-block;
-    color: #C82506;
+    color: $contrast-color;
     padding: 66px 20px 25px;
     margin-right: 10px;
     margin-top: -5px;
@@ -176,17 +176,17 @@ footer {
 
     &:hover,
     &.current-page {
-      color: #C82506;
+      color: $site-background-color;
       border-bottom: none;
     }
 
     &:hover {
-      background-color: #C82506;
+      background-color: $contrast-color;
       transform: translateY(5px);
     }
 
     &.current-page {
-      background-color: #C82506;
+      background-color: $contrast-color;
     }
   }
 }
