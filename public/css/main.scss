@@ -39,6 +39,10 @@ hr,
   margin-bottom: 20px;
 }
 
+h2 {
+  color: $azul-accent-color;
+}
+
 blockquote {
   padding: 0 30px;
   border-left: 2px solid darken($site-background-color, 15%);
