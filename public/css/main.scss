@@ -16,6 +16,7 @@ $avocado-accent-color: #568203;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monaco;
 }
 
 body {
@@ -37,10 +38,6 @@ hr,
 .fluid-width-video-wrapper,
 .highlight {
   margin-bottom: 20px;
-}
-
-h2 {
-  color: $azul-accent-color;
 }
 
 blockquote {
@@ -129,6 +126,12 @@ footer {
 .avocado { a { color: $avocado-accent-color;
     &:hover { color: darken($avocado-accent-color, 20%);
 }}}
+
+.postTitle {
+  h2 {
+    color: $azul-accent-color;
+  }
+}
 
 /*----------------------------------------------------------------------------*/
 
