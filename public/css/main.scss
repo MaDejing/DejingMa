@@ -111,7 +111,7 @@ footer {
 
 /*============================================================================*/
 .azul { a { color: $azul-accent-color;
-    &:hover { color: darken($azul-accent-color, 20%);
+    &:hover { color: darken($azul-accent-color, 10%);
 }}}
 
 .ruby { a { color: $ruby-accent-color;
