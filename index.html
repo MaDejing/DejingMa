@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-{% for post in site.posts %}
-<!-- {% if post.title != "Demo post" %} -->
+<!-- {% if .title != "Demo post" %} -->
 <section class="archive">
+{% for post in site.posts %}
 
 {% unless post.next %}
 
@@ -37,7 +37,6 @@ title: Home
 
 {% if forloop.last %}</div></div>{% endif %}
 
-
+{% endfor %}
 </section>
 <!-- {% endif %} -->
-{% endfor %}
