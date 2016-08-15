@@ -23,8 +23,8 @@ title: React Native 热更新
 	</ol>
 </blockquote>
 
-> *Note:*
 >
+> *Note:*
 > 1.   这是第一行列表项。
 > 2.   这是第二行列表项。
 > 1. assets目录与main.iOS.jsbundle通过打包成zip包上传到服务器。
