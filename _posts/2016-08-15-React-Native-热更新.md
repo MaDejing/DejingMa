@@ -15,7 +15,7 @@ title: React Native 热更新
 
 ![]({{site.baseurl}}/public/images/hot/hot01.png)
 <br />
-*Note：*
-1. assets目录与main.iOS.jsbundle通过打包成zip包上传到服务器。
-2. 该路径中所用到的./bundles需要在项目根目录下手动创建,可以为任意目录。
-3. 图片资源目录assets与jsbundle文件在打包成zip包时,必须在同一级,如图所示。
+> *Note：*
+> 1. assets目录与main.iOS.jsbundle通过打包成zip包上传到服务器。
+> 2. 该路径中所用到的./bundles需要在项目根目录下手动创建,可以为任意目录。
+> 3. 图片资源目录assets与jsbundle文件在打包成zip包时,必须在同一级,如图所示。
