@@ -3,6 +3,7 @@ layout: default
 title: Home
 ---
 
+{% if post.title != "Demo post" %}
 <section class="archive">
 {% for post in site.posts %}
 {% unless post.next %}
@@ -37,3 +38,4 @@ title: Home
 
 {% endfor %}
 </section>
+{% endif %}
