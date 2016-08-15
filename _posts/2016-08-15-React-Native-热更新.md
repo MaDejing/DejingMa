@@ -23,7 +23,8 @@ title: React Native 热更新
 	</ol>
 </blockquote>
 <br />
-<br />
 <p class="subTitle">下载bundle文件</p>
 <u><b>下载文件</b></u>和<u><b>解压缩</b></u>js实现，在<u><i>src/layouts/Global.js中的_onUpdate()</i></u>函数内。  
-1. MiojiChat   react-native-fs    zip         Documents/chat     2.        react-native-zip      Documents/chat    zip       
+1. 使用[react-native-fs](https://github.com/johanneslumpe/react-native-fs)实现下载zip包功能，将其放在Documents目录下。  
+2. 解压缩工作使用[react-native-zip](https://github.com/remobile/react-native-zip)实现，解压至Documents目录下。
+3. 解压成功后，使用[react-native-fs](https://github.com/johanneslumpe/react-native-fs)将zip删除。  
