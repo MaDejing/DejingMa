@@ -35,6 +35,19 @@ title: React Native 热更新
 	</li>
 </ol>
 
+<br />
+<p class="subTitle">替换bundle文件</p>
+<ol>
+	<li>新建<i><u>MJAppUtilModuleManager类</u></i>类，并提供<i><u>bundleUrl</u></i>类方法。</li>
+	<li>在application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary
+*)launchOptions中使用<i><u>jsCodeLocation = [MJAppUtilModuleManager bundleUrl];</u></i></li>
+	<li>MJAppUtilModuleManager类中导出方法<i><u>setJSBundleFile: (NSString *)DEST</u></i>提供给js。js在解压缩成功后调用该方法，并向其传递参数<u>bundle文件的绝对路径</u>。(例如，/var/mobile/Containers/ Data/Application/5F3FEF2A-F938-481A-A46C-83C8EE626222/Documents/chat/iOS/ main.jsbundle)</li>
+	<li>在setJSBundleFile方法中将绝对路径进行处理，得到相对路径，并将<u><b>相对路径目录</b></u>和<u><b>文件名</b></u>分别存入MJAppUtilDEST.plist文件，下次启动App时读取并重新进行拼接。</li>
+	<li>在类方法<i><u>bundleUrl</u></i>中，将plist文件中的路径拼接得到当前bundle文件的绝对路径。对文件是否存在进行判断，若存在则使用该bundle文件，若不存在，则依旧使用main.jsbundle。
+</li>
+	<li>在js文件中通过<i><u><Image source = { require(‘./imgs/test.png') } /></u></i>被获取的图片资源会被打包至assets目录下。若使用热更新，只要assets目录与bundle文件在<u><b>同一目录</b></u>下，那么js文件中使用require获取的图片资源就会从assets目录下获取。图片资源的热更新也就实现了。</li>
+</ol>
+
 
 
 
