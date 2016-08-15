@@ -4,8 +4,7 @@ title: React Native 热更新
 ---
 
 ![]({{site.baseurl}}/public/images/hot/hot00-.png)
-
-<h3 style="color:#C82506; font-size:16px;">RN加载脚本的机制</h3>
+<p style="color:#C82506; font-size:20px; font-weight:bold;">RN加载脚本的机制</p>
 
 > 
 >
