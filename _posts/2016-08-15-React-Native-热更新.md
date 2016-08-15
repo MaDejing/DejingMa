@@ -3,7 +3,7 @@ layout: post
 title: React Native 热更新
 ---
 
-![]'/public/images/hot/hot00.png'
+![](/public/images/hot/hot00.png)
 
 > 
 >
