@@ -41,7 +41,7 @@ title: React Native 热更新
 	<li>新建<i><u>AppUtilModuleManager</u></i>类，并提供<i><u>bundleUrl</u></i>类方法。</li>
 	<li>在application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary
 *)launchOptions中使用<i><u>jsCodeLocation = [AppUtilModuleManager bundleUrl];</u></i></li>
-	<li>AppUtilModuleManager类中导出方法<i><u>setJSBundleFile: (NSString *)DEST</u></i>提供给js。js在解压缩成功后调用该方法，并向其传递参数<u>bundle文件的绝对路径</u>。(例如，/var/mobile/Containers/ Data/Application/5F3FEF2A-F938-481A-A46C-83C8EE626222/Documents/chat/iOS/ main.jsbundle)</li>
+	<li>AppUtilModuleManager类中导出方法<i><u>setJSBundleFile: (NSString *)DEST</u></i>提供给js。js在解压缩成功后调用该方法，并向其传递参数<u>bundle文件的绝对路径</u>。(例如，/var/mobile/Containers/ Data/Application/5F3FEF2A-F938-481A-A46C-83C8EE626222/Documents/main.jsbundle)</li>
 	<li>在setJSBundleFile方法中将绝对路径进行处理，得到相对路径，并将<u><b>相对路径目录</b></u>和<u><b>文件名</b></u>分别存入AppUtilDEST.plist文件，下次启动App时读取并重新进行拼接。</li>
 	<li>在类方法<i><u>bundleUrl</u></i>中，将plist文件中的路径拼接得到当前bundle文件的绝对路径。对文件是否存在进行判断，若存在则使用该bundle文件，若不存在，则依旧使用main.jsbundle。
 </li>
