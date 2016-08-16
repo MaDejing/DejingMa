@@ -29,7 +29,7 @@ title: Home
 {% endif %}
 {% endunless %}
 
-  {% unless {{ post.title }} == "Demo post" %}
+  {% unless post.title == "Demo post" %}
   <article class="row gutters">
     <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="col span_8">{{ post.title }}</a>
     <div class="post-date col span_4">
