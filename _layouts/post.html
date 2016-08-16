@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<img src="{{site.baseurl}}/public/images/name.png" />
 <article class="single row gutters">
   <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time>
   
   <h2 style="color: #C82506">{{ page.title }}</h2>
+  <img src="{{site.baseurl}}/public/images/name.png" />
 
   {{ content }}
 </article>
