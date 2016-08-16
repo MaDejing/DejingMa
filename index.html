@@ -29,14 +29,14 @@ title: Home
 {% endif %}
 {% endunless %}
 
-  {% if {{ post.title }} != "Demo post" %}
+  {% unless {{ post.title }} == "Demo post" %}
   <article class="row gutters">
     <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" class="col span_8">{{ post.title }}</a>
     <div class="post-date col span_4">
       <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %B" }}</time>
     </div>
   </article>
-  {% endif %}
+  {% endunless %}
 
 {% if forloop.last %}</div></div>{% endif %}
 
