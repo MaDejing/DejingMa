@@ -7,7 +7,7 @@ highlighter: null
 permalink: /:title
 
 url:
-baseurl: /blog
+baseurl: /DejingMa
 
 redcarpet:
   extensions: [strikethrough, tables]
