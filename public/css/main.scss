@@ -131,9 +131,15 @@ footer {
 
 /*============================================================================*/
 p.subTitle {
-  color:#C82506; 
-  font-size:24px; 
-  font-weight:bold;
+  color: $azul-accent-color; 
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+h2.postTitle {
+  color: $contrast-color;
+  font-size: 30px;
+  font-weight: 800;
 }
 /*----------------------------------------------------------------------------*/
 
