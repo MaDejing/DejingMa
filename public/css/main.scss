@@ -130,17 +130,24 @@ footer {
 /*----------------------------------------------------------------------------*/
 
 /*============================================================================*/
+p.postTitle {
+  color: $contrast-color;
+  font-size: 34px;
+  font-weight: 800;
+}
+
 p.subTitle {
   color: $azul-accent-color; 
   font-size: 24px; 
   font-weight: bold;
 }
 
-h2.postTitle {
+p.listRowTitle {
   color: $contrast-color;
-  font-size: 34px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 600;
 }
+
 /*----------------------------------------------------------------------------*/
 
 .highlight {
